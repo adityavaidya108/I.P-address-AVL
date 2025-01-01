@@ -250,8 +250,6 @@ void EnterInitialNodes()
             int validAlias = ValidateAliasFileInput(alias);
             if(validIp && validAlias){
                 head = Insert(head, octet, alias, 0);
-                printf("New print \n");
-                PrintInorder(head);
             }
             else{
                 fprintf(errorFile, "%s", line);
@@ -667,4 +665,5 @@ void DisplayErrorLog(){
         printf("%s", line);
     }
     fclose(file);
+    printf("\n");
 }
